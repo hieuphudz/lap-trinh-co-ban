@@ -1,0 +1,22 @@
+# Dữ liệu khảo sát
+tong_khach_hang_khao_sat = 16500
+
+# Tỉ lệ khách mua nước tăng lực (15%)
+ti_le_mua_nuoc_tang_luc = 0.15
+
+# Tỉ lệ khách thích vị cam (58% TRONG SỐ những người mua nước tăng lực)
+ti_le_thich_vi_cam = 0.58
+
+# 1. Số lượng khách hàng mua một hoặc nhiều nước tăng lực mỗi tuần
+# Chuyển đổi kết quả sang số nguyên vì số lượng khách hàng phải là số nguyên
+khach_mua_nuoc_tang_luc = round(tong_khach_hang_khao_sat * ti_le_mua_nuoc_tang_luc)
+
+# 2. Số lượng khách hàng thích nước tăng lực có vị cam
+khach_thich_vi_cam = round(khach_mua_nuoc_tang_luc * ti_le_thich_vi_cam)
+
+print(f"\n--- Tiêu thụ nước tăng lực (Tổng khảo sát: {tong_khach_hang_khao_sat:,}) ---")
+print(f"Tỉ lệ mua nước tăng lực: {ti_le_mua_nuoc_tang_luc * 100:.0f}%")
+print(f"Số lượng khách mua nước tăng lực: {khach_mua_nuoc_tang_luc:,} người")
+print(f"---------------------------------")
+print(f"Tỉ lệ thích vị cam (trong nhóm mua): {ti_le_thich_vi_cam * 100:.0f}%")
+print(f"Số lượng khách thích nước tăng lực vị cam: {khach_thich_vi_cam:,} người")
