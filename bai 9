@@ -1,0 +1,25 @@
+#include <iostream>
+#include <iomanip> // Để format output
+
+using namespace std;
+
+int main() {
+    // Sử dụng toán tử sizeof() để lấy kích thước (bytes) của các kiểu dữ liệu
+    size_t charSize = sizeof(char);
+    size_t intSize = sizeof(int);
+    size_t floatSize = sizeof(float);
+    size_t doubleSize = sizeof(double);
+
+    cout << "--- Kích thước kiểu dữ liệu trong C++ ---" << endl;
+    cout << "  (Kích thước có thể thay đổi tùy thuộc vào hệ thống/trình biên dịch)" << endl;
+    cout << setfill('-') << setw(50) << "" << endl;
+    cout << "Kiểu dữ liệu | Kích thước (bytes)" << endl;
+    cout << setfill('-') << setw(50) << "" << endl;
+    cout << "char         | " << charSize << endl;
+    cout << "int          | " << intSize << endl;
+    cout << "float        | " << floatSize << endl;
+    cout << "double       | " << doubleSize << endl;
+    cout << setfill('-') << setw(50) << "" << endl;
+
+    return 0;
+}
