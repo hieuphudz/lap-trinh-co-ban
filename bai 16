@@ -1,0 +1,44 @@
+#include <iostream>
+
+using namespace std;
+
+void print_diamond(int max_height) {
+    cout << "\n--- Mẫu hình kim cương (C++) ---" << endl;
+
+    // Chiều cao nửa trên (ví dụ: max_height = 4)
+    int height = max_height;
+
+    // 1. Phần trên (Tam giác xuôi)
+    // i chạy từ 1 đến 4
+    for (int i = 1; i <= height; i++) {
+        // In khoảng trắng: height - i (3, 2, 1, 0)
+        for (int j = 1; j <= height - i; j++) {
+            cout << " ";
+        }
+        // In ký tự *: 2*i - 1 (1, 3, 5, 7)
+        for (int k = 1; k <= (2 * i - 1); k++) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+    // 2. Phần dưới (Tam giác ngược)
+    // i chạy từ height - 1 (3) xuống 1 (1)
+    for (int i = height - 1; i >= 1; i--) {
+        // In khoảng trắng: height - i (1, 2, 3)
+        for (int j = 1; j <= height - i; j++) {
+            cout << " ";
+        }
+        // In ký tự *: 2*i - 1 (5, 3, 1)
+        for (int k = 1; k <= (2 * i - 1); k++) {
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
+
+int main() {
+    // Gọi hàm in kim cương với chiều cao nửa trên là 4
+    print_diamond(4);
+    return 0;
+}
