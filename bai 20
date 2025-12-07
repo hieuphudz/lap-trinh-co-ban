@@ -1,0 +1,25 @@
+# Dữ liệu hàng rào
+chieu_cao_rao = 6.0    # feet
+chieu_dai_rao = 100.0  # feet
+
+# Độ phủ của sơn (feet vuông trên mỗi gallon)
+do_phu_moi_gallon = 340.0
+
+# Số lớp sơn
+so_lop_son = 2
+
+# 1. Tính tổng diện tích hàng rào (cho 1 lớp)
+dien_tich_1_lop = chieu_cao_rao * chieu_dai_rao
+
+# 2. Tính tổng diện tích cần sơn (cho 2 lớp)
+tong_dien_tich_son = dien_tich_1_lop * so_lop_son
+
+# 3. Tính số gallon sơn cần thiết
+so_gallon_can_thiet = tong_dien_tich_son / do_phu_moi_gallon
+
+print(f"\n--- Tính toán lượng sơn cần thiết ---")
+print(f"Diện tích hàng rào (1 lớp): {dien_tich_1_lop:,.0f} ft²")
+print(f"Tổng diện tích cần sơn (2 lớp): {tong_dien_tich_son:,.0f} ft²")
+print(f"Độ phủ của sơn: {do_phu_moi_gallon:,.0f} ft²/gallon")
+print("-----------------------------------")
+print(f"Số lượng gallon sơn xấp xỉ cần thiết: {so_gallon_can_thiet:.2f} gallon")
