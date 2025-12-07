@@ -1,0 +1,33 @@
+# Giá trị giỏ hàng
+gia_tri_gio_hang = 95.0
+
+# Tỉ lệ thuế bán hàng của tiểu bang (4%)
+ti_le_thue_tieu_bang = 0.04
+
+# Tỉ lệ thuế bán hàng của quận (2%)
+ti_le_thue_quan = 0.02
+
+# 1. Tính tổng tỉ lệ thuế
+tong_ti_le_thue = ti_le_thue_tieu_bang + ti_le_thue_quan
+
+# 2. Tính số tiền thuế của tiểu bang
+thue_tieu_bang = gia_tri_gio_hang * ti_le_thue_tieu_bang
+
+# 3. Tính số tiền thuế của quận
+thue_quan = gia_tri_gio_hang * ti_le_thue_quan
+
+# 4. Tính tổng số tiền thuế
+tong_thue = thue_tieu_bang + thue_quan
+# (Hoặc: tong_thue = gia_tri_gio_hang * tong_ti_le_thue)
+
+# 5. Tính tổng số tiền phải trả
+tong_tien_phai_tra = gia_tri_gio_hang + tong_thue
+
+print("--- Tính toán Thuế bán hàng ---")
+print(f"Giá trị giỏ hàng: ${gia_tri_gio_hang:,.2f}")
+print("---------------------------------")
+print(f"Thuế tiểu bang ({ti_le_thue_tieu_bang * 100:.0f}%): ${thue_tieu_bang:,.2f}")
+print(f"Thuế quận ({ti_le_thue_quan * 100:.0f}%): ${thue_quan:,.2f}")
+print("---------------------------------")
+print(f"Tổng số tiền thuế: ${tong_thue:,.2f}")
+print(f"**Tổng số tiền phải trả:** ${tong_tien_phai_tra:,.2f}")
