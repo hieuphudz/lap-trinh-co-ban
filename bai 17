@@ -1,0 +1,21 @@
+# Dữ liệu giao dịch
+so_co_phieu = 750
+gia_moi_co_phieu = 35.00
+ti_le_hoa_hong = 0.02 # 2%
+
+# 1. Số tiền thanh toán cho cổ phiếu (không có hoa hồng)
+thanh_toan_co_phieu = so_co_phieu * gia_moi_co_phieu
+
+# 2. Số tiền hoa hồng
+so_tien_hoa_hong = thanh_toan_co_phieu * ti_le_hoa_hong
+
+# 3. Tổng số tiền đã thanh toán (cổ phiếu cộng với hoa hồng)
+tong_thanh_toan = thanh_toan_co_phieu + so_tien_hoa_hong
+
+print(f"--- Hoa hồng chứng khoán ---")
+print(f"Giá mỗi cổ phiếu: ${gia_moi_co_phieu:,.2f}")
+print(f"Số lượng cổ phiếu: {so_co_phieu}")
+print("---------------------------------")
+print(f"Số tiền thanh toán cho cổ phiếu: ${thanh_toan_co_phieu:,.2f}")
+print(f"Số tiền hoa hồng (2%): ${so_tien_hoa_hong:,.2f}")
+print(f"**Tổng số tiền đã thanh toán:** ${tong_thanh_toan:,.2f}")
