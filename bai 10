@@ -1,0 +1,13 @@
+# Lượng xăng có thể chứa (gallon)
+gallons = 15.0
+
+# Quãng đường có thể đi được (dặm)
+miles = 375.0
+
+# Tính số dặm trên mỗi gallon
+mpg = miles / gallons
+
+print(f"--- Số dặm trên mỗi gallon (MPG) ---")
+print(f"Quãng đường đi được: {miles} dặm")
+print(f"Lượng xăng tiêu thụ: {gallons} gallon")
+print(f"Số dặm trên mỗi gallon (MPG) là: {mpg:.2f}")
