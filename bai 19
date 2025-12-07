@@ -1,0 +1,24 @@
+# Dữ liệu nhiệt độ cao trung bình tháng 7 (độ F)
+temp_nyc = 85.0
+temp_denver = 88.0
+temp_phoenix = 106.0
+
+# Tỉ lệ tăng nhiệt độ (2%)
+ti_le_tang = 0.02
+
+# Tính nhiệt độ mới ở mỗi thành phố
+# Nhiệt độ mới = Nhiệt độ cũ * 1.02
+temp_nyc_new = temp_nyc * (1 + ti_le_tang)
+temp_denver_new = temp_denver * (1 + ti_le_tang)
+temp_phoenix_new = temp_phoenix * (1 + ti_le_tang)
+
+# Tính nhiệt độ trung bình mới của cả ba thành phố
+tong_nhiet_do_moi = temp_nyc_new + temp_denver_new + temp_phoenix_new
+nhiet_do_trung_binh_moi = tong_nhiet_do_moi / 3
+
+print(f"--- Nhiệt độ cao hàng năm (Tăng 2%) ---")
+print(f"Nhiệt độ mới ở NYC: {temp_nyc_new:.2f}°F (từ {temp_nyc:.0f}°F)")
+print(f"Nhiệt độ mới ở Denver: {temp_denver_new:.2f}°F (từ {temp_denver:.0f}°F)")
+print(f"Nhiệt độ mới ở Phoenix: {temp_phoenix_new:.2f}°F (từ {temp_phoenix:.0f}°F)")
+print("---------------------------------------")
+print(f"Nhiệt độ trung bình mới tháng 7: {nhiet_do_trung_binh_moi:.2f}°F")
