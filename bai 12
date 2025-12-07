@@ -1,0 +1,12 @@
+# Tổng diện tích khu đất (feet vuông)
+dien_tich_feet_vuong = 391876.0
+
+# Số feet vuông trong 1 mẫu đất
+feet_vuong_tren_mau_dat = 43560.0
+
+# Tính số mẫu đất
+so_mau_dat = dien_tich_feet_vuong / feet_vuong_tren_mau_dat
+
+print(f"\n--- Tính toán mẫu đất ---")
+print(f"Tổng diện tích khu đất: {dien_tich_feet_vuong:,.2f} feet vuông")
+print(f"Số mẫu đất (acres) là: {so_mau_dat:.2f}")
