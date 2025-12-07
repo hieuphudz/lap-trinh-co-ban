@@ -1,0 +1,18 @@
+# Lưu trữ 5 giá trị trong 5 biến khác nhau
+value1 = 28.0
+value2 = 32.0
+value3 = 37.0
+value4 = 24.0
+value5 = 33.0
+
+# 1. Tính tổng của năm biến và lưu vào biến 'sum'
+sum_of_values = value1 + value2 + value3 + value4 + value5
+
+# 2. Lấy biến sum chia cho 5 để lấy được giá trị trung bình
+number_of_values = 5.0
+average = sum_of_values / number_of_values
+
+print("\n--- Tính Giá trị Trung bình ---")
+print(f"Các giá trị: {value1}, {value2}, {value3}, {value4}, {value5}")
+print(f"Tổng các giá trị (sum): {sum_of_values}")
+print(f"Giá trị trung bình (average): {average:.2f}")
