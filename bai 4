@@ -1,0 +1,26 @@
+# Chi phí bữa ăn
+chi_phi_bua_an = 88.67
+
+# Tỉ lệ thuế (6.75%)
+ti_le_thue = 0.0675
+
+# Tỉ lệ tip (20% trên tổng tiền sau thuế)
+ti_le_tip = 0.20
+
+# 1. Tính số tiền thuế
+so_tien_thue = chi_phi_bua_an * ti_le_thue
+
+# 2. Tính tổng tiền sau khi cộng thuế
+tong_tien_sau_thue = chi_phi_bua_an + so_tien_thue
+
+# 3. Tính số tiền tip
+so_tien_tip = tong_tien_sau_thue * ti_le_tip
+
+# 4. Tính tổng hóa đơn cuối cùng
+tong_hoa_don = tong_tien_sau_thue + so_tien_tip
+
+print("\n--- Hóa đơn Nhà hàng ---")
+print(f"Chi phí bữa ăn: ${chi_phi_bua_an:,.2f}")
+print(f"Số tiền thuế ({ti_le_thue * 100:.2f}%): ${so_tien_thue:,.2f}")
+print(f"Số tiền tip ({ti_le_tip * 100:.0f}%): ${so_tien_tip:,.2f}")
+print(f"**Tổng hóa đơn:** ${tong_hoa_don:,.2f}")
