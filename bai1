@@ -1,0 +1,11 @@
+# Lưu trữ các số nguyên vào biến
+number1 = 50
+number2 = 100
+
+# Tính tổng của hai số
+total = number1 + number2
+
+# Hiển thị kết quả (Tùy chọn)
+print(f"Số thứ nhất: {number1}")
+print(f"Số thứ hai: {number2}")
+print(f"Tổng của hai số là: {total}")
