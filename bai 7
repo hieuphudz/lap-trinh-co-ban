@@ -1,0 +1,17 @@
+# Định nghĩa biến mức tăng hàng năm
+muc_tang_hang_nam = 1.5 # mm/năm
+
+# Định nghĩa các mốc thời gian (năm)
+nam_5 = 5
+nam_7 = 7
+nam_10 = 10
+
+# Tính toán mức tăng sau các mốc thời gian
+tang_sau_5_nam = muc_tang_hang_nam * nam_5
+tang_sau_7_nam = muc_tang_hang_nam * nam_7
+tang_sau_10_nam = muc_tang_hang_nam * nam_10
+
+print(f"\n--- Mức nước biển dâng (1.5 mm/năm) ---")
+print(f"Số mm sẽ tăng lên sau 5 năm: {tang_sau_5_nam:.2f} mm")
+print(f"Số mm sẽ tăng lên sau 7 năm: {tang_sau_7_nam:.2f} mm")
+print(f"Số mm sẽ tăng lên sau 10 năm: {tang_sau_10_nam:.2f} mm")
