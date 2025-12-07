@@ -1,0 +1,18 @@
+# Dung tích bình xăng (gallon)
+binh_xang = 20.0
+
+# Mức tiêu thụ trong thành phố (MPG)
+mpg_city = 23.5
+
+# Mức tiêu thụ trên đường cao tốc (MPG)
+mpg_highway = 28.9
+
+# Tính quãng đường đi được trong thành phố
+quang_duong_city = binh_xang * mpg_city
+
+# Tính quãng đường đi được trên đường cao tốc
+quang_duong_highway = binh_xang * mpg_highway
+
+print(f"\n--- Quãng đường với bình xăng {binh_xang} gallon ---")
+print(f"Quãng đường đi được trong thành phố (23.5 MPG): {quang_duong_city:.2f} dặm")
+print(f"Quãng đường đi được trên đường cao tốc (28.9 MPG): {quang_duong_highway:.2f} dặm")
