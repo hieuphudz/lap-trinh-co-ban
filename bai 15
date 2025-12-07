@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    // Chiều cao của tam giác
+    int height = 4;
+    
+    cout << "\n--- Mẫu hình tam giác (C++) ---" << endl;
+    
+    // Vòng lặp ngoài: Duyệt qua từng hàng (i từ 1 đến 4)
+    for (int i = 1; i <= height; i++) {
+        // Vòng lặp 1: In khoảng trắng để căn giữa
+        // Số khoảng trắng = height - i
+        for (int j = 1; j <= (height - i); j++) {
+            cout << " ";
+        }
+        
+        // Vòng lặp 2: In ký tự '*'
+        // Số ký tự '*' = 2 * i - 1 (1, 3, 5, 7)
+        for (int k = 1; k <= (2 * i - 1); k++) {
+            cout << "*";
+        }
+        
+        // Xuống dòng để bắt đầu hàng mới
+        cout << endl;
+    }
+    
+    return 0;
+}
