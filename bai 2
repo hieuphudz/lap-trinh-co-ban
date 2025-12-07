@@ -1,0 +1,13 @@
+# Doanh thu công ty (8.6 triệu đô)
+tong_doanh_thu = 8600000.0 
+
+# Tỉ lệ phần trăm doanh thu của East Coast (58%)
+ti_le_east_coast = 0.58 
+
+# Tính doanh thu dự kiến của East Coast
+doanh_thu_east_coast = tong_doanh_thu * ti_le_east_coast
+
+# Hiển thị kết quả
+print(f"Tổng doanh thu dự kiến của công ty: ${tong_doanh_thu:,.2f}")
+print(f"Tỉ lệ doanh thu của East Coast: {ti_le_east_coast * 100}%")
+print(f"Doanh thu dự kiến của East Coast: ${doanh_thu_east_coast:,.2f}")
