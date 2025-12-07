@@ -1,0 +1,11 @@
+# Định nghĩa các biến
+luong_moi_ky = 2200.0   # Mức lương mỗi kỳ thanh toán (kiểu double)
+so_ky_luong = 26        # Số kỳ lương được nhận trong một năm (kiểu int)
+
+# Tính tổng thanh toán hàng năm
+annual_pay = luong_moi_ky * so_ky_luong
+
+print(f"--- Thanh toán hàng năm ---")
+print(f"Lương mỗi kỳ: ${luong_moi_ky:,.2f}")
+print(f"Số kỳ lương trong năm: {so_ky_luong}")
+print(f"Tổng thanh toán hàng năm (annualPay): ${annual_pay:,.2f}")
