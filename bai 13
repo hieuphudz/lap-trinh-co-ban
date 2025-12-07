@@ -1,0 +1,16 @@
+# Chi phí bo mạch
+chi_phi = 14.95
+
+# Tỉ lệ lợi nhuận (35%)
+ti_le_loi_nhuan = 0.35
+
+# Tính lợi nhuận thực tế (tiền)
+loi_nhuan = chi_phi * ti_le_loi_nhuan
+
+# Tính giá bán
+gia_ban = chi_phi + loi_nhuan
+
+print(f"\n--- Giá một bo mạch (Lợi nhuận 35%) ---")
+print(f"Chi phí bo mạch: ${chi_phi:,.2f}")
+print(f"Lợi nhuận (35%): ${loi_nhuan:,.2f}")
+print(f"Giá bán cuối cùng: ${gia_ban:,.2f}")
