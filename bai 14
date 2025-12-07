@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    // Sử dụng duy nhất một câu lệnh cout, dùng ký tự xuống dòng '\n'
+    cout << "--- Thông tin cá nhân ---" << endl
+         << "Tên của tôi: Nguyen Van A" << endl
+         << "Địa chỉ: 123 Đường XYZ, Quận 1, TP. Hồ Chí Minh 70000" << endl
+         << "Số điện thoại: (090) 123-4567" << endl
+         << "Chuyên ngành: Khoa học Máy tính" << endl;
+
+    return 0;
+}
